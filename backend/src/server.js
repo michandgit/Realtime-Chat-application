@@ -20,7 +20,7 @@ app.use(express.urlencoded({ limit: '10mb', extended: true }));
 const __dirname = path.resolve();
 
 app.use(cors({
-    origin: "https://realtime-chat-application-yl4i.onrender.com",
+    origin: "https://realtime-chat-application-delta.vercel.app",
     credentials: true
   }));
   
