@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server,{
     cors:{
-        origin: ["https://realtime-chat-application-yl4i.onrender.com/api"]
+        origin: ["https://realtime-chat-application-delta.vercel.app"]
     }
 })
 
