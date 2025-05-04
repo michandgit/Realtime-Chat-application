@@ -20,7 +20,7 @@ app.use(express.urlencoded({ limit: '10mb', extended: true }));
 const __dirname = path.resolve();
 
 app.use(cors({
-    origin: process.env.CLIENT_URL || "http://localhost:3000",
+    origin: "https://realtime-chat-application-yl4i.onrender.com",
     credentials: true
   }));
   

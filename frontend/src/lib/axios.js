@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-const devEnv = process.env.REACT_APP_MODE !== 'production';
 
 const axiosInstance = axios.create({
   baseURL:  'https://realtime-chat-application-yl4i.onrender.com/api',
