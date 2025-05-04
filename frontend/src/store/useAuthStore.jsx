@@ -82,10 +82,12 @@ export const useAuthStore = create((set,get) =>({
         const { authUser } = get();
         if (!authUser || get().socket?.connected) return;
     
-        const socket = io("https://realtime-chat-application-yl4i.onrender.com/api", {
+        const socket = io("https://realtime-chat-application-yl4i.onrender.com", {
           query: {
             userId: authUser._id,
           },
+          withCredentials:true,
+          transports:["websocket"]
         });
         socket.connect();
     
