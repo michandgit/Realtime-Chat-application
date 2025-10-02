@@ -57,13 +57,13 @@ const Left = () => {
                 <div className="online-users">
                     <input type="checkbox" checked={showOnlineOnly} onChange={(e) => setShowOnlineOnly(e.target.checked)} />
                     <span>Show online only </span>
-                    <span>({onlineUsers.length - 1} online)</span>
+                    <span>({onlineUsers.length === 0 ? 0 : onlineUsers.length - 1} online)</span>
                 </div>
 
             </div>
 
             <div className="search">
-                <input onChange={handleSearch} type="text" ref={searchRef} />
+                <input onChange={handleSearch} type="text" ref={searchRef} placeholder="Search a contact"/>
             </div>
 
 

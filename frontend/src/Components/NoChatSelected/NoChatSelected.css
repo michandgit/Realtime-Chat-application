@@ -1,4 +1,13 @@
-
+.no-chat-selected {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100vh;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
 
 .no-chat {
 
@@ -8,11 +17,22 @@
     padding: 10px;
     text-align: center;
     margin-top: 250px;
+
 }
 
 .no-chat p {
-    color: white;
-    font-size: 18px;
+    
     max-width: 90%;
     line-height: 1.4;
+    color: #222; /* or #333 for even more contrast */
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 8px #fff, 0 0 2px #000;
+  /* Optional: add a background for even more contrast */
+  background: rgba(255,255,255,0.3);
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: inline-block;
+   
 }

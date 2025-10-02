@@ -23,7 +23,8 @@ app.use(cors({
     origin: "https://realtime-chat-application-delta.vercel.app",
     credentials: true
   }));
-  
+
+
 
 app.use("/api/auth" , authRoutes);
 app.use("/api/message", messageRoutes);

@@ -3,7 +3,7 @@ import './NoChatSelected.css'
 
 const NoChatselected = () => {
   return (
-    <div className='right'>
+    <div className='no-chat-selected'>
         <div className="no-chat">
             <p>Select a conversation from the sidebar to start chatting</p>
         </div>
